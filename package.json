@@ -2,13 +2,17 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://iosmonbekov.github.io/money-maker/",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "gh-pages": "^3.2.3",
     "vue": "^3.0.0"
   },
   "devDependencies": {
